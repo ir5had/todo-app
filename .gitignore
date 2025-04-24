@@ -1,0 +1,10 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Task data file
+tasks.json
+
+# IDE/editor files
+.vscode/
+.idea/
