@@ -1,4 +1,4 @@
-from todo import add_task, view_tasks, delete_task, mark_complete, edit_task, sort_tasks
+from todo import add_task, view_tasks, delete_task, mark_complete, edit_task, sort_tasks, filter_tasks
 
 def show_menu():
     print('\n=== TO-DO APP ===')
@@ -8,12 +8,13 @@ def show_menu():
     print('4. Mark Task as complete')
     print('5. Edit Task')
     print('6. Sort Tasks by Priority')
-    print('7. Exit')
+    print('7. Filter Tasks')
+    print('8. Exit')
 
 def main():
     while True:
         show_menu()
-        choice = input('Enter your choice (1-7): ')
+        choice = input('Enter your choice (1-8): ')
 
         if choice == '1':
             view_tasks()
@@ -28,6 +29,8 @@ def main():
         elif choice == '6':
             sort_tasks()
         elif choice == '7':
+            filter_tasks()
+        elif choice == '8':
             print('Goodbye!')
             break
         else:
